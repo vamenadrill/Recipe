@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: #008C45; 
+}
+
+#searchInput {
+  border: 2px solid #008C45;
+  box-shadow: 0 0 5px rgba(0, 140, 69, 0.3);
+  transition: 0.3s ease;
+}
+#searchInput:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(140, 0, 0, 0.7);
+  border-color: #008C45;
+}
+
+#clearBtn {
+  font-weight: bold;
+  background-color: #CD212A; 
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+#clearBtn:hover {
+  background-color: #a51a22;
+  box-shadow: 0 6px 15px rgba(0, 153, 51, 0.568);
+
+}
+
+#searchHistory li {
+  transition: 0.2s ease;
+  border-left: 4px solid #008C45;
+  background-color: #f9f9f9;
+}
+
+#searchHistory li:hover {
+  background-color: #e6f2ea;
+}
+
+
+
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #008C45;
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.card a.btn {
+  background-color: #CD212A; 
+  color: white;
+  font-weight: 500;
+  border: none;
+}
+
+.card a.btn:hover {
+  background-color: #a51a22;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #008C45;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #CD212A;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  background: linear-gradient(90deg, #009246, #FFFFFF, #CE2B37);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.9s ;
+}
+
+
+/* Responsive media*/
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
